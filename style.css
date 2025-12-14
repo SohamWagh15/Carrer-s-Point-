@@ -1,0 +1,24 @@
+/* Custom Stylesheet for Careers's Point */
+
+/* Apply custom font globally (using the Inter font linked in index.html) */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Tailwind will handle the color based on bg-background-light and text-text-dark */
+}
+
+/* * Custom class for the soft entrance animation (fade-in-up)
+ * This utilizes CSS transitions that are triggered by JavaScript (script.js)
+ */
+.fade-in-up {
+    transition: all 0.8s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-in-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: Smooth scroll is set on the <html> tag in index.html */
+/* html { scroll-behavior: smooth; } */
